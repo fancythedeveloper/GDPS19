@@ -19,9 +19,13 @@ if(!empty($_POST["accountID"])){
 }
 
 $type = $ep->remove($_POST["type"]);
-if($type == "top" OR $type == "creators" OR $type == "relative"){
+if($type == "top" OR $type == "creators" OR $type == "relative" OR $type == "week"){
 	if($type == "top"){
 		$query = "SELECT * FROM users WHERE isBanned = '0' AND gameVersion $sign AND stars > 0 ORDER BY stars DESC LIMIT 100";
+	}
+	if($type == "week"){
+		$lastPlayed = time() - 604800;
+		$query = "SELECT * FROM users WHERE isBanned = '0' AND gameVersion $sign AND stars > 0 AND lastPlayed > $lastPlayed ORDER BY stars DESC LIMIT 100";
 	}
 	if($type == "creators"){
 		$query = "SELECT * FROM users WHERE isCreatorBanned = '0' AND creatorPoints > 0 ORDER BY creatorPoints DESC LIMIT 100";
