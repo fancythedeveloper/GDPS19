@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `levels` (
   KEY `audioTrack` (`audioTrack`),
   KEY `levelLength` (`levelLength`),
   KEY `twoPlayer` (`twoPlayer`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=19 ;
 
 -- --------------------------------------------------------
 
@@ -297,7 +297,7 @@ CREATE TABLE IF NOT EXISTS `songs` (
   `reuploadTime` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`ID`),
   KEY `name` (`name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=467340 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=900000 ;
 
 -- --------------------------------------------------------
 
