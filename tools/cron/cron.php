@@ -14,8 +14,5 @@ flush();
 include "removeBlankLevels.php";
 ob_flush();
 flush();
-include "songsCount.php";
-ob_flush();
-flush();
 file_put_contents("../logs/cronlastrun.txt",time());
 ?>
