@@ -1,4 +1,3 @@
-<a href="../dashboard">Check out the dashboard beta here</a>
 <?php
 function listdir($dir){
 	$dirstring = "";
@@ -12,6 +11,8 @@ function listdir($dir){
 }
 echo '<h1>Account management tools:</h1><ul>';
 echo listdir("account");
+echo '<h2>Administrator tools:</h2><ul>';
+echo listdir("admin");
 echo'</ul><h1>Upload related tools:</h1><ul>';
 echo listdir(".");
 echo "</ul><h1>The cron job (fixing CPs, autoban, etc.)</h1><ul>";
