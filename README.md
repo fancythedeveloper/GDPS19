@@ -6,8 +6,6 @@ Supported version of Geometry Dash: 1.9
 
 Required version of PHP: 5.4+ (tested up to 7.1.3)
 
-DonAlex0GDPS: https://discord.gg/9vcbHtq
-
 ### Setup
 1) Upload the files on a webserver
 2) Import database.sql into a MySQL/MariaDB database
